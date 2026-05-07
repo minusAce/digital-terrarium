@@ -244,24 +244,24 @@
         rose: {
             'red+white':   { 'pink': 6, 'red': 2, 'white': 2 },
             'red+yellow':  { 'orange': 6, 'red': 2, 'yellow': 2 },
-            'red+red':     { 'black': 3, 'red': 7 },
             'white+white': { 'purple': 4, 'white': 6 },
             'pink+orange': { 'blue': 4, 'pink': 3, 'orange': 3 },
+            'red+red':     { 'black': 3, 'red': 7 },
             'black+black': { 'gold': 1, 'black': 9 } // Gold is extra rare!
         },
         tulip: {
             'red+yellow':    { 'orange': 6, 'red': 2, 'yellow': 2 },
             'red+white':     { 'pink': 6, 'red': 2, 'white': 2 },
+            'orange+orange': { 'purple': 4, 'orange': 6 },
             'red+red':       { 'black': 3, 'red': 7 },
-            'orange+orange': { 'purple': 4, 'orange': 6 }
         },
         pansy: {
             'red+yellow':  { 'orange': 6, 'red': 2, 'yellow': 2 },
-            'white+white': { 'blue': 4, 'white': 6 },
             'red+blue':    { 'pink': 6, 'red': 2, 'blue': 2 },
-            'orange+blue': { 'black': 2, 'orange': 4, 'blue': 4 },
+            'white+white': { 'blue': 4, 'white': 6 },
             'pink+pink':   { 'purple': 4, 'pink': 6 },
-            'black+black': { 'purple': 4, 'black': 6 }
+            'black+black': { 'purple': 4, 'black': 6 },
+            'orange+blue': { 'black': 2, 'orange': 4, 'blue': 4 },
         },
         cosmos: {
             'red+yellow':    { 'orange': 6, 'red': 2, 'yellow': 2 },
@@ -307,7 +307,7 @@
     let wType       = 'clear';
     let wLat        = 37.35, wLon = -121.95;
 
-    const GROW_BASE = 100 / (48 * 3600 * 1000);
+    const GROW_BASE = 100 / (12 * 3600 * 1000);
     // const GROW_BASE = 100 / 10;
     const MATURE = 100, BREED = 200;
     // ── FIXED: PLANT_R now matches visible island boundary ──
